@@ -39,9 +39,7 @@
     },
     {
         "class": "tab_label",
-        "fg": [255, 255, 255, 100],
-        "shadow_color": [0, 0, 0, 100],
-        "shadow_offset": [0, -1]
+        "fg": [255, 255, 255, 100]
     },
     {
         // selected
@@ -54,9 +52,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [255, 255, 255, 200],
-        "shadow_color": [0, 0, 0, 200],
-        "shadow_offset": [0, -1]
+        "fg": [255, 255, 255, 200]
     },
     {
         // hovered
@@ -340,7 +336,7 @@
         "min_size": [75, 0],
         "layer0.texture": "Theme - Paradise/button-up.png",
         "layer0.inner_margin": [6, 6],
-        "layer0.opacity": 0.8,
+        "layer0.opacity": 0.5,
         "layer1.texture": "Theme - Paradise/button-down.png",
         "layer1.opacity": 0.0,
         "layer1.inner_margin": [6, 6]
@@ -348,18 +344,23 @@
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
-        "color": [255, 255, 255, 100]
+        "color": [255, 255, 255, 80]
+    },
+    {
+        "class": "label_control",
+        "parents": [{"class": "button_control","attributes": ["hover"]}],
+        "color": [255, 255, 255, 120]
     },
     {
         "class": "button_control",
         "attributes": ["hover"],
-        "layer0.opacity": 0.9
+        "layer0.opacity": 0.7
     },
     {
         "class": "button_control",
         "attributes": ["pressed"],
         "layer0.opacity": 0.0,
-        "layer1.opacity": 0.8
+        "layer1.opacity": 0.6
     },
     {
         "class": "label_control",
@@ -371,67 +372,67 @@
         "class": "icon_button_control",
         "layer0.texture": "Theme - Paradise/button-up-middle.png",
         "layer0.inner_margin": [6, 6],
-        "layer0.opacity": 0.8,
+        "layer0.opacity": 0.5,
         "content_margin": [7, 6]
     },
     {
         "class": "icon_button_control",
         "attributes": ["left"],
         "layer0.texture": "Theme - Paradise/button-up-left.png",
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_button_control",
         "attributes": ["right"],
         "layer0.texture": "Theme - Paradise/button-up-right.png",
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
         "layer0.texture": "Theme - Paradise/button-up.png",
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.5
     },
     {
         "class": "icon_button_control",
         "attributes": ["hover"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": 0.7
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
         "layer0.texture": "Theme - Paradise/button-down-middle.png",
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.3
     },
     {
         "class": "icon_button_control",
         "attributes": ["pressed"],
-        "layer0.texture": "Theme - Paradise/button-down-left.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Paradise/button-down-middle.png",
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "selected"],
         "layer0.texture": "Theme - Paradise/button-down-left.png",
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.3
     },
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - Paradise/button-down-left.png",
         "attributes": ["left", "pressed"],
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_button_control",
         "attributes": ["right", "selected"],
         "layer0.texture": "Theme - Paradise/button-down-right.png",
-        "layer0.opacity": 0.6
+        "layer0.opacity": 0.3
     },
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - Paradise/button-down-right.png",
         "attributes": ["right", "pressed"],
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_button_control",
@@ -443,127 +444,127 @@
         "class": "icon_button_control",
         "layer0.texture": "Theme - Paradise/button-down.png",
         "attributes": ["right", "left", "pressed"],
-        "layer0.opacity": 0.8
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Paradise/icons-regex.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Paradise/icons-regex.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Paradise/icons-case.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_case",
         "layer0.texture": "Theme - Paradise/icons-case.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Paradise/icons-highlight.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_highlight",
         "layer0.texture": "Theme - Paradise/icons-highlight.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Paradise/icons-selection.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
      {
         "class": "icon_in_selection",
         "layer0.texture": "Theme - Paradise/icons-selection.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
    {
         "class": "icon_reverse",
         "layer0.texture": "Theme - Paradise/icons-reverse.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_reverse",
         "layer0.texture": "Theme - Paradise/icons-reverse.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Paradise/icons-wrap.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_wrap",
         "layer0.texture": "Theme - Paradise/icons-wrap.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Paradise/icons-word.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_whole_word",
         "layer0.texture": "Theme - Paradise/icons-word.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Paradise/icons-preserve.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_preserve_case",
         "layer0.texture": "Theme - Paradise/icons-preserve.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_context",
         "layer0.texture": "Theme - Paradise/icons-context.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_context",
         "layer0.texture": "Theme - Paradise/icons-context.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Paradise/icons-buffer.png",
-        "layer0.opacity": 0.6,
+        "layer0.opacity": 0.4,
         "content_margin": [8, 8]
     },
     {
         "class": "icon_use_buffer",
         "layer0.texture": "Theme - Paradise/icons-buffer.png",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],        
-        "layer0.opacity": 0.7
+        "layer0.opacity": 0.6
     },
 
 
