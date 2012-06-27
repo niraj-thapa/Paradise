@@ -639,7 +639,6 @@
         "class": "popup_control",
         "layer0.tint": [65, 50, 48],   // scheme-specific
         "layer0.opacity": 1.0,
-        "inner_margin": [3, 3],
         "content_margin": [4, 4]
     },
     {
